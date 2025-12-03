@@ -4,7 +4,6 @@
 #include <unordered_map>
 #include <algorithm>
 
-// функция для перевода строки в нижний регистр
 std::string toLower(const std::string& s) {
     std::string r = s;
     std::transform(r.begin(), r.end(), r.begin(),
@@ -13,7 +12,6 @@ std::string toLower(const std::string& s) {
 }
 
 int main() {
-    // карта: "название в нижнем регистре" -> (lat, lon)
     std::unordered_map<std::string, std::pair<double, double>> cities = {
         // Київ
         {"київ", {50.4501, 30.5234}},
